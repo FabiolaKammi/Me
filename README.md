@@ -1,71 +1,73 @@
-# Getting Started with Create React App
+ABOUT ME Webpage 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Wireframe 
 
-## Available Scripts
+Functional documentation 
 
-In the project directory, you can run:
+The About me webpage has the following parts: 
 
-### `npm start`
+Header (it contains the navbar displays the different Items available on the webpage and the logo) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Body (On top it has a centered h1, it contains a picture on the left and on the right, it has a centered orange title follow with a paragraph. Then at the bottom it has a centered button) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Footer (four columns of three rows)  
 
-### `npm test`
+ 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technical documentation 
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Libraries 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The following libraries had been used in other to create the says webpage; 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React Dom/client: It enables react to interact with browser DOM. 
 
-### `npm run eject`
+- React: Handle the rendering of react components. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React icons: This library allows the insertion of icons on the webpage. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Code color 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Navbar: #f0a233; 
 
-## Learn More
+button: #b06c0b; 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Footer: #978f85 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Webpage background color: #f0fff 
 
-### Code Splitting
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Dimensions  
 
-### Analyzing the Bundle Size
+Navbar: max width 1200px 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+button: width 200px 
 
-### Making a Progressive Web App
+Header max width 1200px, height:100px; 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Footer: max width 1200px, height:50vh; 
 
-### Advanced Configuration
+Body: max width 1200px, height:90vh; 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Components 
 
-### Deployment
+All components are simple functions returning JSX elements. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Header 
 
-### `npm run build` fails to minify
+Body 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# greeting-card" 
+Footer 
+
+Features 
+
+Scrawl up and down 
+
+Access my resume 
+
+Read about me. 
