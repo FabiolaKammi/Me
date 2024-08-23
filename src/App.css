@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Ga+Maamli&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=New+Amsterdam&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+FR+Moderne:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.App{
+    background-color: #f0ffff;
+    color: #000;
+    font-family: 'Libre Baskerville','Playwrite Deutschland Grundschrift';
+    font-weight: 500;
+}
+body{
+    background-image:"utils/personalimg2";
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-bacground-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid #000;
+    border-radius:10px ;
+    max-width: 1500px;
+    margin: auto;
+    background-color:#f0a233;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    max-width: auto;
+    margin-right: 20px;
+} 
+
+.logo-div{
+    align-items: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbar img {
+    margin-left: 25px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+span{
+    font-family: 'Ga Maamli', 'Ubuntu';
+    font-weight: bold;
+   text-align: center;  
+}
+.text-test {
+    overflow:visible;
+    width: 100%;
+    position: relative;
+}
+h1{
+    text-align: center;
+    margin: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-family: "Edu VIC WA NT Beginner";   
+    position: absolute;
+    white-space: nowrap;
+    animation-name: moveText;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count:infinite ;
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1::before {
+    content:attr(data-text);
+    position:absolute;
+    top: 4%;
+    left:20%;
+    width: 0;
+    height: 100%;
+    color: #f0a233;
+    -webkit-text-stroke: 0,3vw #141313;
+    border-right: 2px solid #e6e3e0; 
+    overflow:visible;
+    animation: animate 6s linear infinite;
+    animation-name: animate;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes animate {
+    0%
+    {width: 0;}
+    70% {
+        width: 70%;
+    }
+    70% {
+        width: 100%;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.body-container{
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.body-wrapper {
+    max-width: 1500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+font-family: 'Ga Maamli';
+background-color: #f0a233;
+text-align: center;
+margin: auto;
+padding: 10px;
+border-radius: 5px;
+}
+.body-container  p {
+    border-right: 2px solid black;
+    font-size: 24px;
+    text-align: center; 
+    margin: auto;
+    padding: 5px;
+    display: inline-block;
+    overflow: visible;
+    animation: typing 20s steps(10, start), blink-caret 2s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from{ border-color: transparent; }
+    50% { border-color: black; }
+}
+  
+
+
+button{
+background-color: #b06c0b;
+width: 250px;
+border-radius: 5px;
+margin: 50px;
+margin-left: 42%;
+height: 50px;
+font-weight: bold;
+color: #fff;
+overflow: hidden;
+}
+
+img {
+border-radius: 5px;
+margin-top: 6rem;
+}
+
+.hobby-container {
+    max-width: 100vw;
+    margin-top: 0;
+    background-image:#fff;  
+}
+.hobby-container h3 {
+    text-align: center;
+    padding: 0,4rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.intro-div {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.hobby-wrapper {
+
+    list-style: none;
+}
+.hobby-wrapper li {
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+    
+    &:nth-of-type(5){
+        color:  #f0a233;
+    }
+}
+.img-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        gap: 1rem;
+        padding: 20px;
+}
+.img-wrapper img {
+    flex: 1;
+    border: 1px solid #000;
+}
+.passion-wrapper {
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+gap: 1rem;
+padding: 20px;
+}
+.passion-wrapper div{
+flex: 1;
+border: 1px solid #000;
+}
+ 
+
+.passion-wrapper span{
+    text-align: center;
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+.passion-wrapper p {
+    font-size: 1rem;
+    padding: 5px;
+}
+.footer-section {
+    height: 10vh;
+    width: auto;
+    background-color:#f1d5b3;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner';
+}
+.about-me,
+.contacts,
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+
+.media {
+    align-items:baseline;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:first baseline;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    max-width: 1000px;
+    padding: 150px;
+}
+.center {
+    margin-top: 50px;
+    margin-left: 50%;
+    margin-right: 30%;
+    transform: translate(-40%, -40%);
+
+}
+.slider {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.slide{
+    overflow: hidden;
+    height: 50px ;
+    background:  #f0a233;
+}
+.slide div div {
+    display:inline-block;
+    color:#fff;
+    
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.slide div:nth-child(1){
+    animation: animate 7s linear infinite;
+}
+@keyframes animate {
+    0% {margin-top: -440px}
+    5% {margin-top: -3600px}
+    33% {margin-top: -270px}
+    38% {margin-top: -180px}
+    66% {margin-top: -90px}
+    71% {margin-top: 0px}
+    100%{margin-top: -270px}
+
 }
